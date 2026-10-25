@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalogue | ReadSpace</title>
+
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/4-catalogue.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">📖 ReadSpace</a>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="4-catalogue.html" class="active">Catalogue</a></li>
+                    <li><a href="3-login.html">Log in</a></li>
+                    <li>
+                        <a href="2-signup.html" class="btn btn-primary">
+                            Sign up
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Catalogue Header -->
+        <section class="catalogue-header">
+            <div class="container">
+                <h1>Explore Our Library</h1>
+                <p>Discover your next favorite book from our collection.</p>
+            </div>
+        </section>
+
+        <!-- Search and Filters -->
+        <section class="section">
+            <div class="container">
+
+                <h2 class="section-title">Book Catalogue</h2>
+
+                <form class="search-form">
+
+                    <div class="search-group">
+                        <label for="search">Search Books</label>
+                        <input
+                            type="search"
+                            id="search"
+                            name="search"
+                            placeholder="Search by title or author"
+                        >
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="category">Category</label>
+
+                        <select id="category" name="category">
+                            <option value="all">All Categories</option>
+                            <option value="fiction">Fiction</option>
+                            <option value="science">Science</option>
+                            <option value="technology">Technology</option>
+                            <option value="self-help">Self-Help</option>
+                            <option value="history">History</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn btn-primary">
+                        Search
+                    </button>
+
+                </form>
+
+                <!-- Books Grid -->
+                <div class="books-grid">
+
+                    <!-- Book 1 -->
+                    <article class="book-card">
+                        <div class="book-cover">📗</div>
+
+                        <div class="book-info">
+                            <span class="book-category">Self-Help</span>
+
+                            <h3>Atomic Habits</h3>
+
+                            <p class="book-author">James Clear</p>
+
+                            <span class="status available">Available</span>
+
+                            <a href="5-book-details.html" class="btn btn-primary">
+                                View Details
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Book 2 -->
+                    <article class="book-card">
+                        <div class="book-cover">📘</div>
+
+                        <div class="book-info">
+                            <span class="book-category">Technology</span>
+
+                            <h3>Clean Code</h3>
+
+                            <p class="book-author">Robert C. Martin</p>
+
+                            <span class="status borrowed">Borrowed</span>
+
+                            <a href="5-book-details.html" class="btn btn-primary">
+                                View Details
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Book 3 -->
+                    <article class="book-card">
+                        <div class="book-cover">📕</div>
+
+                        <div class="book-info">
+                            <span class="book-category">Fiction</span>
+
+                            <h3>The Alchemist</h3>
+
+                            <p class="book-author">Paulo Coelho</p>
+
+                            <span class="status available">Available</span>
+
+                            <a href="5-book-details.html" class="btn btn-primary">
+                                View Details
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Book 4 -->
+                    <article class="book-card">
+                        <div class="book-cover">📙</div>
+
+                        <div class="book-info">
+                            <span class="book-category">Science</span>
+
+                            <h3>A Brief History of Time</h3>
+
+                            <p class="book-author">Stephen Hawking</p>
+
+                            <span class="status available">Available</span>
+
+                            <a href="5-book-details.html" class="btn btn-primary">
+                                View Details
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Book 5 -->
+                    <article class="book-card">
+                        <div class="book-cover">📚</div>
+
+                        <div class="book-info">
+                            <span class="book-category">History</span>
+
+                            <h3>Sapiens</h3>
+
+                            <p class="book-author">Yuval Noah Harari</p>
+
+                            <span class="status borrowed">Borrowed</span>
+
+                            <a href="5-book-details.html" class="btn btn-primary">
+                                View Details
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Book 6 -->
+                    <article class="book-card">
+                        <div class="book-cover">📖</div>
+
+                        <div class="book-info">
+                            <span class="book-category">Fiction</span>
+
+                            <h3>1984</h3>
+
+                            <p class="book-author">George Orwell</p>
+
+                            <span class="status available">Available</span>
+
+                            <a href="5-book-details.html" class="btn btn-primary">
+                                View Details
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Empty State Example -->
+                
+                <!-- <div class="empty-state">
+                    <h3>No Books Found</h3>
+                    <p>Try searching with a different title, author, or category.</p>
+                </div> -->
+               
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div>
+                <div class="logo">
+                    <a href="index.html">📖 ReadSpace</a>
+                </div>
+                <p>A simple online library to search, borrow, and manage books.</p>
+            </div>
+
+            <div>
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="4-catalogue.html">Catalogue</a></li>
+                    <li><a href="6-my-borrowed-books.html">My borrowed books</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Account</h3>
+                <ul class="footer-links">
+                    <li><a href="3-login.html">Log in</a></li>
+                    <li><a href="2-signup.html">Sign up</a></li>
+                    <li><a href="7-admin-dashboard.html">Admin dashboard</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="footer-bottom">
+            &copy; 2026 ReadSpace. Web Technology Project.
+        </p>
+    </footer>
+
+</body>
+</html>
