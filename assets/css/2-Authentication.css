@@ -1,0 +1,94 @@
+main {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    gap: 20px;
+}
+
+main section {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
+main h1 {
+    text-align: center;
+    color: var(--color-primary-dark);
+    margin-bottom: 10px;
+}
+
+main section > p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+form input:focus {
+    outline: 2px solid var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+form input[type="checkbox"] {
+    accent-color: var(--color-primary);
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+main > p {
+    text-align: center;
+}
+
+main a {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+main a:hover {
+    color: var(--color-primary-dark);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+    main section {
+        padding: 20px;
+    }
+}
