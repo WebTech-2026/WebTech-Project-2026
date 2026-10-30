@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrowed Books</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/6-borrowed.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">📖 ReadSpace</a>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="4-catalogue.html" class="active">Catalogue</a></li>
+                    <li><a href="3-login.html">Log in</a></li>
+                    <li>
+                        <a href="2-signup.html" class="btn btn-primary">
+                            Sign up
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+<main>
+
+        <!-- Page Header -->
+        <section class="catalogue-header">
+            <div class="container">
+                <h1>My Borrowed Books</h1>
+                <p>Keep track of the books you are currently reading.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+
+                <h2 class="section-title">Currently Borrowed</h2>
+
+                <p class="borrowed-count">You have <strong>2</strong> borrowed books.</p>
+
+                <!-- Result state: appears after clicking "Return Book" -->
+                <div class="alert alert-success" id="return-success">
+                    ✅ Book returned successfully. It is now available in the
+                    <a href="4-catalogue.html">catalogue</a> again.
+                </div>
+
+                <ul class="borrowed-list">
+
+                    <!-- Borrowed book 1 -->
+                    <li class="borrowed-item">
+                        <div class="borrowed-cover">📘</div>
+
+                        <div class="borrowed-info">
+                            <span class="book-category">Technology</span>
+                            <h3>Clean Code</h3>
+                            <p class="book-author">Robert C. Martin</p>
+
+                            <p class="borrowed-meta">
+                                Book ID: #002 &middot; Borrowed on: 20 Oct 2026
+                            </p>
+
+                            <span class="status borrowed">Borrowed</span>
+                        </div>
+
+                        <div class="borrowed-actions">
+                            <a href="5-book-details.html" class="btn btn-outline">View Details</a>
+                            <a href="#return-success" class="btn btn-primary">Return Book</a>
+                        </div>
+                    </li>
+
+                    <!-- Borrowed book 2 -->
+                    <li class="borrowed-item">
+                        <div class="borrowed-cover">📚</div>
+
+                        <div class="borrowed-info">
+                            <span class="book-category">History</span>
+                            <h3>Sapiens</h3>
+                            <p class="book-author">Yuval Noah Harari</p>
+
+                            <p class="borrowed-meta">
+                                Book ID: #005 &middot; Borrowed on: 24 Oct 2026
+                            </p>
+
+                            <span class="status borrowed">Borrowed</span>
+                        </div>
+
+                        <div class="borrowed-actions">
+                            <a href="5-book-details.html" class="btn btn-outline">View Details</a>
+                            <a href="#return-success" class="btn btn-primary">Return Book</a>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <!-- Empty State Example -->
+
+                <!-- <div class="empty-state">
+                    <h3>No Borrowed Books</h3>
+                    <p>You haven't borrowed any books yet. Browse the catalogue to find your next read.</p>
+                    <a href="4-catalogue.html" class="btn btn-primary">Browse Catalogue</a>
+                </div> -->
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div>
+                <div class="logo">
+                    <a href="index.html">📖 ReadSpace</a>
+                </div>
+                <p>A simple online library to search, borrow, and manage books.</p>
+            </div>
+
+            <div>
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="4-catalogue.html">Catalogue</a></li>
+                    <li><a href="6-my-borrowed-books.html">My borrowed books</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Account</h3>
+                <ul class="footer-links">
+                    <li><a href="3-login.html">Log in</a></li>
+                    <li><a href="2-signup.html">Sign up</a></li>
+                    <li><a href="7-admin-dashboard.html">Admin dashboard</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="footer-bottom">
+            &copy; 2026 ReadSpace. Web Technology Project.
+        </p>
+    </footer>
+
+</body>
+</html>
