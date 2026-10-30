@@ -32,7 +32,89 @@
 
 
 
+<main>
 
+        <!-- Page Header -->
+        <section class="catalogue-header">
+            <div class="container">
+                <h1>My Borrowed Books</h1>
+                <p>Keep track of the books you are currently reading.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+
+                <h2 class="section-title">Currently Borrowed</h2>
+
+                <p class="borrowed-count">You have <strong>2</strong> borrowed books.</p>
+
+                <!-- Result state: appears after clicking "Return Book" -->
+                <div class="alert alert-success" id="return-success">
+                    ✅ Book returned successfully. It is now available in the
+                    <a href="4-catalogue.html">catalogue</a> again.
+                </div>
+
+                <ul class="borrowed-list">
+
+                    <!-- Borrowed book 1 -->
+                    <li class="borrowed-item">
+                        <div class="borrowed-cover">📘</div>
+
+                        <div class="borrowed-info">
+                            <span class="book-category">Technology</span>
+                            <h3>Clean Code</h3>
+                            <p class="book-author">Robert C. Martin</p>
+
+                            <p class="borrowed-meta">
+                                Book ID: #002 &middot; Borrowed on: 20 Oct 2026
+                            </p>
+
+                            <span class="status borrowed">Borrowed</span>
+                        </div>
+
+                        <div class="borrowed-actions">
+                            <a href="5-book-details.html" class="btn btn-outline">View Details</a>
+                            <a href="#return-success" class="btn btn-primary">Return Book</a>
+                        </div>
+                    </li>
+
+                    <!-- Borrowed book 2 -->
+                    <li class="borrowed-item">
+                        <div class="borrowed-cover">📚</div>
+
+                        <div class="borrowed-info">
+                            <span class="book-category">History</span>
+                            <h3>Sapiens</h3>
+                            <p class="book-author">Yuval Noah Harari</p>
+
+                            <p class="borrowed-meta">
+                                Book ID: #005 &middot; Borrowed on: 24 Oct 2026
+                            </p>
+
+                            <span class="status borrowed">Borrowed</span>
+                        </div>
+
+                        <div class="borrowed-actions">
+                            <a href="5-book-details.html" class="btn btn-outline">View Details</a>
+                            <a href="#return-success" class="btn btn-primary">Return Book</a>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <!-- Empty State Example -->
+
+                <!-- <div class="empty-state">
+                    <h3>No Borrowed Books</h3>
+                    <p>You haven't borrowed any books yet. Browse the catalogue to find your next read.</p>
+                    <a href="4-catalogue.html" class="btn btn-primary">Browse Catalogue</a>
+                </div> -->
+
+            </div>
+        </section>
+
+    </main>
 
 
 

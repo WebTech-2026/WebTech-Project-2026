@@ -32,6 +32,125 @@
     </header>
 
 
+<main>
+
+        <section class="section">
+            <div class="container">
+
+                <a href="4-catalogue.html" class="back-link">&larr; Back to Catalogue</a>
+
+                <!-- Book Details: Available state -->
+                <article class="book-details">
+
+                    <div class="book-cover">📗</div>
+
+                    <div class="details-content">
+                        <span class="book-category">Self-Help</span>
+
+                        <h1 class="details-title">Atomic Habits</h1>
+
+                        <p class="book-author">by James Clear</p>
+
+                        <dl class="details-meta">
+                            <div>
+                                <dt>Book ID</dt>
+                                <dd>#001</dd>
+                            </div>
+                            <div>
+                                <dt>Author</dt>
+                                <dd>James Clear</dd>
+                            </div>
+                            <div>
+                                <dt>Category</dt>
+                                <dd>Self-Help</dd>
+                            </div>
+                            <div>
+                                <dt>Availability</dt>
+                                <dd><span class="status available">Available</span></dd>
+                            </div>
+                        </dl>
+
+                        <h2 class="details-subtitle">Description</h2>
+                        <p class="details-description">
+                            A practical guide to building good habits and breaking bad ones.
+                            The book explains how tiny daily changes compound over time
+                            and gives simple strategies to make good habits easy
+                            and bad habits hard.
+                        </p>
+
+                        <!-- Result state: appears after clicking "Borrow This Book" -->
+                        <div class="alert alert-success" id="borrow-success">
+                            ✅ You borrowed <strong>Atomic Habits</strong>.
+                            Find it in <a href="6-my-borrowed-books.html">My Borrowed Books</a>.
+                        </div>
+
+                        <div class="details-actions">
+                            <a href="#borrow-success" class="btn btn-primary">Borrow This Book</a>
+                            <a href="4-catalogue.html" class="btn btn-outline">Back to Catalogue</a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- UI example: Borrowed (unavailable) state -->
+                <section class="state-preview">
+                    <p class="state-preview-label">UI example: when a book is already borrowed</p>
+
+                    <article class="book-details">
+
+                        <div class="book-cover">📘</div>
+
+                        <div class="details-content">
+                            <span class="book-category">Technology</span>
+
+                            <h2 class="details-title">Clean Code</h2>
+
+                            <p class="book-author">by Robert C. Martin</p>
+
+                            <dl class="details-meta">
+                                <div>
+                                    <dt>Book ID</dt>
+                                    <dd>#002</dd>
+                                </div>
+                                <div>
+                                    <dt>Author</dt>
+                                    <dd>Robert C. Martin</dd>
+                                </div>
+                                <div>
+                                    <dt>Category</dt>
+                                    <dd>Technology</dd>
+                                </div>
+                                <div>
+                                    <dt>Availability</dt>
+                                    <dd><span class="status borrowed">Borrowed</span></dd>
+                                </div>
+                            </dl>
+
+                            <h3 class="details-subtitle">Description</h3>
+                            <p class="details-description">
+                                A handbook of good software craftsmanship, with practical advice
+                                on writing code that is clean, readable, and easy to maintain.
+                            </p>
+
+                            <p class="unavailable-note">
+                                This copy is currently borrowed. Please check back later.
+                            </p>
+
+                            <div class="details-actions">
+                                <button type="button" class="btn btn-primary" disabled>
+                                    Not Available
+                                </button>
+                                <a href="4-catalogue.html" class="btn btn-outline">Back to Catalogue</a>
+                            </div>
+                        </div>
+
+                    </article>
+                </section>
+
+            </div>
+        </section>
+
+    </main>
 
 
 

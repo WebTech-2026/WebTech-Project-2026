@@ -1,0 +1,167 @@
+/* Back link */
+.back-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Book Details Layout */
+.book-details {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+
+    padding: 2rem;
+}
+
+.book-details .book-cover {
+    height: 320px;
+    font-size: 7rem;
+    border-radius: var(--radius);
+}
+
+
+/* Details Content */
+.details-title {
+    font-size: 2.2rem;
+    margin: 0.5rem 0 0.25rem;
+}
+
+.details-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.details-description {
+    margin-bottom: 1.5rem;
+}
+
+
+/* Meta information (ID, author, category, availability) */
+.details-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.details-meta dt {
+    color: #667;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.details-meta dd .status {
+    margin-bottom: 0;
+}
+
+
+/* Actions */
+.details-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+button.btn {
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Disabled button (book not available) */
+.btn:disabled,
+.btn:disabled:hover {
+    background-color: #b9c6c5;
+    border-color: #b9c6c5;
+    color: white;
+    cursor: not-allowed;
+}
+
+.unavailable-note {
+    color: #a12b2b;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+
+/* Result message (shown with :target, no JavaScript needed) */
+.alert {
+    display: none;
+
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius);
+    margin-bottom: 1.5rem;
+}
+
+.alert:target {
+    display: block;
+}
+
+.alert-success {
+    background-color: #d8f3dc;
+    border: 1px solid #b7e4c7;
+    color: #216e39;
+}
+
+.alert a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+
+/* UI example section (borrowed state) */
+.state-preview {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px dashed var(--color-border);
+}
+
+.state-preview-label {
+    text-align: center;
+    color: #667;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .book-details {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    .book-details .book-cover {
+        height: 220px;
+        font-size: 5rem;
+    }
+
+    .details-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .details-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
