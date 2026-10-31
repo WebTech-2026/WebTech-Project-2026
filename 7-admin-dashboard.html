@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin dashboard | readspace</title>
+
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/7-admin-dashboard.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">📖 ReadSpace</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="4-catalogue.html">catalogue</a></li>
+                    <li><a href="7-admin-dashboard.html" class="active">view books</a></li>
+                    <li><a href="index.html" class="btn btn-primary">log out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="dashboard-header">
+            <div class="container">
+                <h1>admin dashboard</h1>
+                <p>manage the books in the library.</p>
+            </div>
+        </section>
+
+        <section class="section dashboard-section">
+            <div class="container">
+                <div class="book-list-heading">
+                    <h2>book list</h2>
+                    <a href="8-add-edit-book.html" class="btn btn-primary">add book</a>
+                </div>
+
+                <form class="dashboard-search" action="#" method="get">
+                    <div class="search-field">
+                        <label for="book-title">title</label>
+                        <input type="search" id="book-title" name="title" placeholder="book title">
+                    </div>
+                    <div class="search-field">
+                        <label for="book-author">author</label>
+                        <input type="search" id="book-author" name="author" placeholder="author name">
+                    </div>
+                    <div class="search-field">
+                        <label for="book-category">category</label>
+                        <select id="book-category" name="category">
+                            <option value="all">all categories</option>
+                            <option value="fiction">fiction</option>
+                            <option value="science">science</option>
+                            <option value="technology">technology</option>
+                            <option value="self-help">self-help</option>
+                            <option value="history">history</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-outline">search</button>
+                </form>
+
+                <div class="table-wrap">
+                    <table class="book-table">
+                        <caption class="visually-hidden">books in the library</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">book id</th>
+                                <th scope="col">title</th>
+                                <th scope="col">author</th>
+                                <th scope="col">category</th>
+                                <th scope="col">description</th>
+                                <th scope="col">availability</th>
+                                <th scope="col">actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#001</td>
+                                <td>Atomic Habits</td>
+                                <td>James Clear</td>
+                                <td>self-help</td>
+                                <td class="book-description">A practical guide to building good habits and breaking bad ones. The book explains how tiny daily changes compound over time and gives simple strategies to make good habits easy and bad habits hard.</td>
+                                <td><span class="status available">available</span></td>
+                                <td class="book-actions">
+                                    <a href="8-add-edit-book.html">edit</a>
+                                    <button type="button" class="delete-action">delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#002</td>
+                                <td>Clean Code</td>
+                                <td>Robert C. Martin</td>
+                                <td>technology</td>
+                                <td class="book-description">A handbook of good software craftsmanship, with practical advice on writing code that is clean, readable, and easy to maintain.</td>
+                                <td><span class="status borrowed">borrowed</span></td>
+                                <td class="book-actions">
+                                    <a href="8-add-edit-book.html">edit</a>
+                                    <button type="button" class="delete-action">delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#003</td>
+                                <td>The Alchemist</td>
+                                <td>Paulo Coelho</td>
+                                <td>fiction</td>
+                                <td class="book-description"></td>
+                                <td><span class="status available">available</span></td>
+                                <td class="book-actions">
+                                    <a href="8-add-edit-book.html">edit</a>
+                                    <button type="button" class="delete-action">delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#004</td>
+                                <td>A Brief History of Time</td>
+                                <td>Stephen Hawking</td>
+                                <td>science</td>
+                                <td class="book-description"></td>
+                                <td><span class="status available">available</span></td>
+                                <td class="book-actions">
+                                    <a href="8-add-edit-book.html">edit</a>
+                                    <button type="button" class="delete-action">delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#005</td>
+                                <td>Sapiens</td>
+                                <td>Yuval Noah Harari</td>
+                                <td>history</td>
+                                <td class="book-description"></td>
+                                <td><span class="status borrowed">borrowed</span></td>
+                                <td class="book-actions">
+                                    <a href="8-add-edit-book.html">edit</a>
+                                    <button type="button" class="delete-action">delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#006</td>
+                                <td>1984</td>
+                                <td>George Orwell</td>
+                                <td>fiction</td>
+                                <td class="book-description"></td>
+                                <td><span class="status available">available</span></td>
+                                <td class="book-actions">
+                                    <a href="8-add-edit-book.html">edit</a>
+                                    <button type="button" class="delete-action">delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <details class="empty-state-preview">
+                    <summary>view empty state</summary>
+                    <div class="empty-state">
+                        <h3>no books found</h3>
+                        <p>try another title, author, or category.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <div class="logo">
+                    <a href="index.html">📖 ReadSpace</a>
+                </div>
+                <p>a simple online library to search, borrow, and manage books.</p>
+            </div>
+
+            <div>
+                <h3>explore</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="4-catalogue.html">catalogue</a></li>
+                    <li><a href="6-my-borrowed-books.html">my borrowed books</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>account</h3>
+                <ul class="footer-links">
+                    <li><a href="3-login.html">log in</a></li>
+                    <li><a href="2-signup.html">sign up</a></li>
+                    <li><a href="7-admin-dashboard.html">admin dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-bottom">&copy; 2026 ReadSpace. web technology project.</p>
+    </footer>
+</body>
+</html>
