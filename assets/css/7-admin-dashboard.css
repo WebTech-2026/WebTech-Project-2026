@@ -1,0 +1,220 @@
+.dashboard-header {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.dashboard-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.35rem;
+}
+
+.dashboard-header p {
+    font-size: 0.95rem;
+}
+
+.dashboard-section {
+    padding-top: 2rem;
+}
+
+.book-list-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.book-list-heading h2 {
+    font-size: 1.35rem;
+}
+
+.book-list-heading .btn,
+.dashboard-search .btn {
+    padding: 0.45rem 1rem;
+    font-size: 0.9rem;
+}
+
+.dashboard-search {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1fr auto;
+    align-items: end;
+    gap: 0.75rem;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
+.search-field label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.search-field input,
+.search-field select {
+    width: 100%;
+    min-height: 2.4rem;
+    padding: 0.45rem 0.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background-color: white;
+    font: inherit;
+}
+
+.search-field input:focus,
+.search-field select:focus {
+    outline: 2px solid var(--color-primary);
+}
+
+.table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background-color: var(--color-surface);
+}
+
+.book-table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.book-table th,
+.book-table td {
+    padding: 0.75rem 0.8rem;
+    border-bottom: 1px solid var(--color-border);
+    white-space: nowrap;
+}
+
+.book-table th {
+    background-color: #edf3f2;
+    font-weight: 700;
+}
+
+.book-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.status {
+    display: inline-block;
+    margin: 0;
+    padding: 0.2rem 0.55rem;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.available {
+    background-color: #d8f3dc;
+    color: #216e39;
+}
+
+.borrowed {
+    background-color: #ffe5e5;
+    color: #a12b2b;
+}
+
+.book-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.book-actions a,
+.delete-action {
+    border: 0;
+    padding: 0;
+    background: none;
+    color: var(--color-primary);
+    font: inherit;
+    cursor: pointer;
+}
+
+.book-actions a:hover,
+.delete-action:hover {
+    text-decoration: underline;
+}
+
+.book-actions .delete-action {
+    color: #a12b2b;
+}
+
+.empty-state-preview {
+    margin-top: 1rem;
+    color: var(--color-primary);
+    font-size: 0.9rem;
+}
+
+.empty-state-preview summary {
+    width: fit-content;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.empty-state {
+    margin-top: 0.75rem;
+    padding: 1.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background-color: var(--color-surface);
+    text-align: center;
+}
+
+.empty-state h3 {
+    margin-bottom: 0.35rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 760px) {
+    .dashboard-search {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .dashboard-search .btn {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 520px) {
+    .book-list-heading {
+        align-items: flex-start;
+    }
+
+    .dashboard-search {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-search .btn {
+        width: 100%;
+    }
+
+    .dashboard-header h1 {
+        font-size: 1.7rem;
+    }
+}
+
+.book-table td.book-description {
+    width: 280px;
+    min-width: 240px;
+    max-width: 320px;
+    white-space: normal;
+    line-height: 1.5;
+}
