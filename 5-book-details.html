@@ -7,32 +7,18 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/4-catalogue.css">
     <link rel="stylesheet" href="assets/css/5-book-details.css" />
+    <script src="assets/js/storage.js" defer></script>
+    <script src="assets/js/auth.js" defer></script>
+    <script src="assets/js/validation.js" defer></script>
+    <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/book-details.js" defer></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">📖 ReadSpace</a>
-            </div>
-
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="4-catalogue.html" class="active">Catalogue</a></li>
-                    <li><a href="3-login.html">Log in</a></li>
-                    <li>
-                        <a href="2-signup.html" class="btn btn-primary">
-                            Sign up
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Navbar  -->
+    <header class="navbar"></header>
 
 
-<main>
+<main data-required-role="user" hidden>
 
         <section class="section">
             <div class="container">

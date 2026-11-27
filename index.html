@@ -7,25 +7,16 @@
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/1-home.css" />
+    <script src="assets/js/storage.js" defer></script>
+    <script src="assets/js/auth.js" defer></script>
+    <script src="assets/js/validation.js" defer></script>
+    <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/home.js" defer></script>
   </head>
 
   <body>
-    <!-- Navbar  -->
-    <header class="navbar">
-      <div class="container">
-        <div class="logo">
-          <a href="index.html">📖 ReadSpace</a>
-        </div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="4-catalogue.html">Catalogue</a></li>
-            <li><a href="3-login.html">Log in</a></li>
-            <li><a href="2-signup.html" class="btn btn-primary">Sign up</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <!-- Navbar (built by nav.js) -->
+    <header class="navbar"></header>
 
     <main>
       <!-- Hero sec -->
@@ -36,10 +27,8 @@
             Search the library catalogue, borrow the books you love, and keep
             track of everything you are reading in one place.
           </p>
-          <div class="hero-actions">
-            <a href="4-catalogue.html" class="btn btn-primary">Browse books</a>
-            <a href="2-signup.html" class="btn btn-outline">Create an account</a>
-          </div>
+          <!-- Buttons are built by home.js according to the role -->
+          <div class="hero-actions" id="hero-actions"></div>
         </div>
       </section>
 
@@ -48,21 +37,21 @@
         <div class="container">
           <h2 class="section-title">What you can do on ReadSpace</h2>
           <div class="features">
-            <article class="feature-card">
+            <article class="feature-card" data-roles="guest user">
               <div class="feature-icon">🔍</div>
               <h3>Find a book</h3>
               <p>Search by title, author, or category and see what is available.</p>
               <a href="4-catalogue.html">Go to catalogue</a>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card" data-roles="guest user">
               <div class="feature-icon">📚</div>
               <h3>Borrow and return</h3>
               <p>Borrow available books and return them when you are done.</p>
               <a href="6-my-borrowed-books.html">My borrowed books</a>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card" data-roles="guest admin">
               <div class="feature-icon">🛠️</div>
               <h3>Manage the library</h3>
               <p>Administrators can add, edit, and remove books from the catalogue.</p>
@@ -110,8 +99,8 @@
         </div>
       </section>
 
-      <!-- Call to action-->
-      <section class="section cta">
+      <!-- Call to action (shown to guests only, controlled by home.js) -->
+      <section class="section cta" id="cta-section">
         <div class="container">
           <h2>Ready to start reading?</h2>
           <p>Already have an account? Log in and pick up where you left off.</p>
