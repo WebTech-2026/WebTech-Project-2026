@@ -8,25 +8,17 @@
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/7-admin-dashboard.css">
+    <script src="assets/js/storage.js" defer></script>
+    <script src="assets/js/auth.js" defer></script>
+    <script src="assets/js/validation.js" defer></script>
+    <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/admin-dashboard.js" defer></script>
 </head>
 <body>
-    <header class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">📖 ReadSpace</a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="4-catalogue.html">catalogue</a></li>
-                    <li><a href="7-admin-dashboard.html" class="active">view books</a></li>
-                    <li><a href="index.html" class="btn btn-primary">log out</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Navbar  -->
+    <header class="navbar"></header>
 
-    <main>
+    <main data-required-role="admin" hidden>
         <section class="dashboard-header">
             <div class="container">
                 <h1>admin dashboard</h1>

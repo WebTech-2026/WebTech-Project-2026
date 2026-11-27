@@ -7,26 +7,18 @@
     <title>Add / Edit Book</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/8-add-edit-book.css">
+    <script src="assets/js/storage.js" defer></script>
+    <script src="assets/js/auth.js" defer></script>
+    <script src="assets/js/validation.js" defer></script>
+    <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/add-edit-book.js" defer></script>
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">📖 ReadSpace</a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="7-admin-dashboard.html">View Books</a></li>
-                    <li><a href="8-add-edit-book.html" class="active">Add Book</a></li>
-                    <li><a href="index.html" class="btn btn-primary">Logout</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Navbar  -->
+    <header class="navbar"></header>
 
-    <main class="book-form">
+    <main class="book-form" data-required-role="admin" hidden>
         <h1>Add / Edit Book</h1>
 
         <form action="#" method="post">
